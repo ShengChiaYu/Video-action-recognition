@@ -112,11 +112,12 @@ with, batch size = 1, Adam(Learning rate=1e-4) ,fix CNN parameters, only trainin
 <img src="p3_figure/legend.jpg" width="50%">
 <img src="p3_figure/OP01-R07-Pizza.jpg" width="100%">
 
-In this video, label 0(other), 4(cut), 7(move around) are easier to predict. The reason might be that they have larger portion than other labels in the dataset. They time length of their continuous frames are longer as well. In this unbalanced situation, the model will tend to leanrn and predict the actions. Even though I weighted different actions before training according to their portion in dataset inversely, the results still stay the same.
+The upper stripe is ground truth, and the lower stripe is prediction.  
+In this video, label 0(other), 4(cut), 7(move around) are easier to predict. The reason might be that they have larger portion than other labels in the dataset. They time length of their continuous frames are longer as well. In this unbalanced situation, the model will tend to learn and predict the actions. Even though I weight different actions before training according to their portion in dataset inversely, the results still stay the same.
 
 
 ## Running the test
-Following commands will automatically download the model trained by myself to predict the recognition results.
+Following commands will automatically download the model trained by myself to predict the results.
 
 ### Extract features for recognition
 
